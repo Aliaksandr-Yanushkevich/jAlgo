@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>jAlgo</title>
+    <link rel="stylesheet" href="./index.css" />
+  </head>
+  <body>
+    <div class="app_wrapper">
+      <header>
+        jAlgo
+      </header>
+      <section>
+        <h1>
+          Hello dear user. Here you can see simple bubble and quick sort
+          visualization. Hope my page will be useful for you...
+        </h1>
+        <div class="main">
+          <canvas id="canvas"></canvas>
+          <div class="info">
+            <div id="stepsQuantity">Total steps: --</div>
+            <div id="stepNumber">Step number: --</div>
+            <div id="timeSpent">Calculation time, ms: --</div>
+          </div>
+          <div class="tools">
+            <div class="sortType">
+              <input
+                id="bubble"
+                type="radio"
+                name="sortType"
+                value="true"
+                checked
+              />
+              <label for="bubble">Bubble Sort</label>
+              <input
+                id="quick"
+                type="radio"
+                name="sortType"
+                value="false"
+                disabled
+              />
+              <label for="quick">Quick Sort</label>
+            </div>
+
+            <div class="options">
+              <div class="optonsItem">
+                <input
+                  id="arraySize"
+                  type="range"
+                  min="10"
+                  max="400"
+                  step="10"
+                  value="200"
+                />
+                <label id="arraySizeLabel" for="arraySize"
+                  >Array size: 150</label
+                >
+              </div>
+              <div class="optonsItem">
+                <input
+                  id="delay"
+                  type="range"
+                  min="10"
+                  max="1000"
+                  step="90"
+                  value="500"
+                />
+                <label id="delayLabel" for="array">Delay, ms: 500</label>
+              </div>
+            </div>
+
+            <button id="start" type="button">Start</button>
+
+            <p>Choose sort type, options and click 'Start'</p>
+          </div>
+        </div>
+      </section>
+      <footer>
+        Created by Aliaksandr Yanushkevich
+      </footer>
+    </div>
+    <script src="./index.js"></script>
+  </body>
+</html>

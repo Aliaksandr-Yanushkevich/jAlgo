@@ -1,0 +1,60 @@
+$primaryColor: #33353d;
+$font: "Geneva", "Arial", "Helvetica", sans-serif;
+
+.app_wrapper {
+  display: grid;
+  max-width: 1440px;
+  margin: 0 auto;
+  grid-template-areas:
+    "h"
+    "c"
+    "f";
+  grid-template-rows: 60px 1fr 60px;
+  grid-template-columns: 1fr;
+  background-color: #b9cce1;
+  font-family: $font;
+}
+
+header,
+footer {
+  color: #ffffff;
+  font-family: $font;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 0 20px;
+  background-color: $primaryColor;
+}
+
+header {
+  grid-area: h;
+}
+
+h1 {
+  text-align: center;
+  font-family: $font;
+  font-size: 20px;
+}
+
+section {
+  padding: 20px 150px;
+}
+
+.main {
+  display: flex;
+  justify-content: space-between;
+}
+
+footer {
+  grid-area: f;
+}
+
+#canvas {
+  border: 1px solid black;
+  image-rendering: pixelated;
+  display: block;
+  // margin: 0 auto;
+  width: 512px;
+  height: 512px;
+}
