@@ -6,3 +6,5 @@ export const delay = document.querySelector('#delay');
 export const start = document.querySelector('#start');
 export const arraySizeLabel = document.querySelector('#arraySizeLabel');
 export const timeSpent = document.querySelector('#timeSpent');
+export const bubble = document.querySelector('#bubble');
+const quick = document.querySelector('#quick');
